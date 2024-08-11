@@ -70,4 +70,3 @@ print(reg.intercept_)
 ##Final Model: Y= 27367 + 8967 * X
 
 
-#test commit
