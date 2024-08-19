@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot  as plt
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from sklearn.linear_model import LogisticRegression
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import confusion_matrix , accuracy_score
 df=pd.read_csv('Social_Network_Ads.csv')
 #print (df.info())
@@ -22,7 +22,7 @@ X_train=sc.fit_transform(X_train)
 X_test=sc.transform(X_test)
 
 ##trainning the K_NN model on the trainning set
-from sklearn.neighbors import KNeighborsClassifier
+
 classifier=KNeighborsClassifier(n_neighbors=5 , )
 classifier.fit(X_train,Y_train)
 
